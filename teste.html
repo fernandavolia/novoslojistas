@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vòlia - Seja um Revendedor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
+        }
+        
+        .nail-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f3e8ff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-3xl font-bold text-purple-600">Vòlia</div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#vantagens" class="text-gray-700 hover:text-purple-600 transition-colors">Vantagens</a>
+                    <a href="#cadastro" class="text-gray-700 hover:text-purple-600 transition-colors">Cadastro</a>
+                    <a href="#sobre" class="text-gray-700 hover:text-purple-600 transition-colors">Sobre Nós</a>
+                    <a href="#faq" class="text-gray-700 hover:text-purple-600 transition-colors">FAQ</a>
+                    <a href="#contato" class="text-gray-700 hover:text-purple-600 transition-colors">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="gradient-bg nail-pattern min-h-full py-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="fade-in">
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">
+                    Seja um Revendedor <span class="text-purple-200">Vòlia</span>
+                </h1>
+                <p class="text-xl text-purple-100 mb-8 max-w-3xl mx-auto">
+                    Transforme sua loja com os melhores cosméticos para unhas do mercado. 
+                    Junte-se à nossa rede de parceiros e descubra as vantagens exclusivas da Vòlia.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#cadastro" class="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold hover:bg-purple-50 transition-colors hover-scale">
+                        Quero ser Revendedor
+                    </a>
+                    <a href="#vantagens" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition-colors">
+                        Conhecer Vantagens
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vantagens -->
+    <section id="vantagens" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Por que escolher a Vòlia?</h2>
+                <p class="text-xl text-gray-600">Vantagens exclusivas para nossos parceiros revendedores</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover-scale border border-purple-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">Isenção de ST</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Isenção de Substituição Tributária em SP e ES, aumentando sua margem de lucro.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover-scale border border-purple-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">Hub Logístico</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Centro de distribuição estratégico para entregas rápidas em todo o Brasil.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover-scale border border-purple-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">Cursos para Lojistas</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Capacitação completa em técnicas de vendas e atendimento ao cliente.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover-scale border border-purple-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">Ações Promocionais</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Campanhas de marketing e materiais promocionais exclusivos.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover-scale border border-purple-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">Exclusividade</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Produtos exclusivos para parceiros e condições especiais de pagamento.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover-scale border border-purple-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">Suporte Dedicado</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Equipe especializada para suas dúvidas e necessidades comerciais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Cadastro -->
+    <section id="cadastro" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Cadastre sua Loja</h2>
+                    <p class="text-xl text-gray-600">Preencha os dados abaixo e nossa equipe entrará em contato</p>
+                </div>
+
+                <form class="bg-gray-50 p-8 rounded-xl shadow-lg" onsubmit="handleSubmit(event)">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="nomeLoja" class="block text-sm font-medium text-gray-700 mb-2">Nome da Loja *</label>
+                            <input type="text" id="nomeLoja" name="nomeLoja" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+
+                        <div>
+                            <label for="cnpj" class="block text-sm font-medium text-gray-700 mb-2">CNPJ *</label>
+                            <input type="text" id="cnpj" name="cnpj" required placeholder="00.000.000/0000-00"
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+
+                        <div>
+                            <label for="instagram" class="block text-sm font-medium text-gray-700 mb-2">Instagram</label>
+                            <input type="text" id="instagram" name="instagram" placeholder="@sualojainstagram"
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+
+                        <div>
+                            <label for="cidade" class="block text-sm font-medium text-gray-700 mb-2">Cidade *</label>
+                            <input type="text" id="cidade" name="cidade" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+
+                        <div>
+                            <label for="uf" class="block text-sm font-medium text-gray-700 mb-2">UF *</label>
+                            <select id="uf" name="uf" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                                <option value="">Selecione o Estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="telefone" class="block text-sm font-medium text-gray-700 mb-2">Telefone/WhatsApp *</label>
+                            <input type="tel" id="telefone" name="telefone" required placeholder="(11) 99999-9999"
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <button type="submit" 
+                                class="w-full bg-purple-600 text-white py-4 px-8 rounded-lg font-semibold hover:bg-purple-700 transition-colors hover-scale">
+                            Enviar Cadastro
+                        </button>
+                    </div>
+
+                    <div id="successMessage" class="hidden mt-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Cadastro enviado com sucesso! Nossa equipe entrará em contato em breve.
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem Somos -->
+    <section id="sobre" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-gray-800 mb-12 text-center">Quem Somos Nós</h2>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="grid md:grid-cols-2 gap-0">
+                        <div class="p-8 md:p-12 flex flex-col justify-center">
+                            <p class="text-lg text-gray-600 mb-6">
+                                A <strong class="text-purple-600">Vòlia</strong> é uma marca brasileira especializada em cosméticos para unhas, 
+                                comprometida em oferecer produtos de alta qualidade e inovação para profissionais e lojistas em todo o país.
+                            </p>
+                            <p class="text-lg text-gray-600 mb-6">
+                                Com anos de experiência no mercado de beleza, desenvolvemos uma linha completa de esmaltes, 
+                                bases, tops e acessórios que atendem às mais exigentes demandas do setor.
+                            </p>
+                            <p class="text-lg text-gray-600">
+                                Nossa missão é empoderar nossos parceiros revendedores com produtos excepcionais, 
+                                suporte dedicado e condições comerciais diferenciadas para o crescimento mútuo.
+                            </p>
+                        </div>
+                        <div class="bg-gradient-to-br from-purple-100 to-purple-200 p-8 md:p-12 flex items-center justify-center">
+                            <div class="text-center">
+                                <svg class="w-32 h-32 mx-auto mb-6 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <h3 class="text-2xl font-bold text-purple-600 mb-4">Qualidade Garantida</h3>
+                                <p class="text-purple-700">Produtos testados e aprovados por milhares de profissionais</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Perguntas Frequentes</h2>
+                    <p class="text-xl text-gray-600">Tire suas principais dúvidas sobre nossa parceria</p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 hover:text-purple-600 transition-colors flex justify-between items-center"
+                                onclick="toggleFaq(this)">
+                            Qual o pedido mínimo para ser revendedor?
+                            <svg class="w-5 h-5 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4">
+                            <p class="text-gray-600">O pedido mínimo varia conforme a região e tipo de estabelecimento. Nossa equipe comercial definirá as condições ideais para seu negócio durante o primeiro contato.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 hover:text-purple-600 transition-colors flex justify-between items-center"
+                                onclick="toggleFaq(this)">
+                            Como funciona a entrega dos produtos?
+                            <svg class="w-5 h-5 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4">
+                            <p class="text-gray-600">Trabalhamos com nosso hub logístico próprio para garantir entregas rápidas e seguras. O prazo varia de 3 a 7 dias úteis dependendo da localização.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 hover:text-purple-600 transition-colors flex justify-between items-center"
+                                onclick="toggleFaq(this)">
+                            Quais são as formas de pagamento?
+                            <svg class="w-5 h-5 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4">
+                            <p class="text-gray-600">Oferecemos diversas opções: à vista com desconto, parcelamento no cartão, boleto bancário e condições especiais para parceiros estabelecidos.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 hover:text-purple-600 transition-colors flex justify-between items-center"
+                                onclick="toggleFaq(this)">
+                            Vocês oferecem treinamento para vendedores?
+                            <svg class="w-5 h-5 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4">
+                            <p class="text-gray-600">Sim! Oferecemos cursos presenciais e online sobre técnicas de aplicação, conhecimento dos produtos e estratégias de vendas para maximizar seus resultados.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 hover:text-purple-600 transition-colors flex justify-between items-center"
+                                onclick="toggleFaq(this)">
+                            Como funciona o suporte pós-venda?
+                            <svg class="w-5 h-5 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4">
+                            <p class="text-gray-600">Temos uma equipe dedicada para atender nossos parceiros via WhatsApp, telefone e email. Oferecemos suporte técnico, comercial e de marketing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato WhatsApp -->
+    <section id="contato" class="py-20 bg-gradient-to-br from-purple-600 via-purple-700 to-indigo-800 relative overflow-hidden">
+        <!-- Elementos decorativos -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 left-10 w-32 h-32 bg-white rounded-full blur-xl"></div>
+            <div class="absolute bottom-10 right-10 w-40 h-40 bg-purple-300 rounded-full blur-2xl"></div>
+            <div class="absolute top-1/2 left-1/3 w-24 h-24 bg-indigo-300 rounded-full blur-xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <div class="mb-12">
+                    <div class="inline-flex items-center justify-center w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h2 class="text-5xl font-bold text-white mb-4">Ainda tem dúvidas? 🤔</h2>
+                    <p class="text-xl text-purple-100 max-w-2xl mx-auto">
+                        Nossa equipe está pronta para esclarecer todas as suas questões e ajudar você a se tornar um parceiro Vòlia
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="bg-white/95 backdrop-blur-sm rounded-3xl p-8 shadow-2xl hover-scale">
+                        <div class="flex items-center justify-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-r from-green-400 to-green-600 rounded-2xl flex items-center justify-center shadow-lg">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.106"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Fale Conosco Agora!</h3>
+                        <p class="text-gray-600 mb-6 text-sm">
+                            Converse diretamente com nossa equipe comercial. 
+                            <br><strong>Online:</strong> Segunda a Sexta, 8h às 18h
+                        </p>
+                        <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse em ser revendedor Vòlia. Gostaria de mais informações." 
+                           target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-3 rounded-2xl font-semibold hover:from-green-600 hover:to-green-700 transition-all duration-300 hover-scale shadow-lg">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.106"/>
+                            </svg>
+                            Conversar no WhatsApp
+                        </a>
+                    </div>
+                    
+                    <div class="text-left space-y-4">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center mr-4">
+                                    <span class="text-2xl">⚡</span>
+                                </div>
+                                <h4 class="text-white font-semibold">Resposta Imediata</h4>
+                            </div>
+                            <p class="text-purple-100 text-sm">Nossa equipe responde em até 5 minutos durante o horário comercial</p>
+                        </div>
+                        
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center mr-4">
+                                    <span class="text-2xl">🎯</span>
+                                </div>
+                                <h4 class="text-white font-semibold">Atendimento Personalizado</h4>
+                            </div>
+                            <p class="text-purple-100 text-sm">Consultoria especializada para seu tipo de negócio</p>
+                        </div>
+                        
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center mr-4">
+                                    <span class="text-2xl">💜</span>
+                                </div>
+                                <h4 class="text-white font-semibold">Suporte Completo</h4>
+                            </div>
+                            <p class="text-purple-100 text-sm">Desde o cadastro até o pós-venda, estamos com você</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="text-3xl font-bold text-purple-400 mb-4">Vòlia</div>
+                    <p class="text-gray-300 mb-4">
+                        Cosméticos para unhas de alta qualidade para profissionais exigentes.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contato</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p>📧 comercial@volia.com.br</p>
+                        <p>📞 (11) 3000-0000</p>
+                        <p>📍 São Paulo - SP</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Dúvidas?</h3>
+                    <p class="text-gray-300 mb-4">
+                        Caso tenha alguma dúvida, pode entrar em contato diretamente com nossa equipe:
+                    </p>
+                    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.106"/>
+                        </svg>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Vòlia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Simular envio do formulário
+            const form = event.target;
+            const formData = new FormData(form);
+            
+            // Validar campos obrigatórios
+            const requiredFields = ['nomeLoja', 'cnpj', 'cidade', 'uf', 'telefone'];
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!formData.get(field)) {
+                    isValid = false;
+                }
+            });
+            
+            if (!isValid) {
+                return;
+            }
+            
+            // Mostrar mensagem de sucesso
+            document.getElementById('successMessage').classList.remove('hidden');
+            
+            // Limpar formulário
+            form.reset();
+            
+            // Scroll para a mensagem
+            document.getElementById('successMessage').scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'center' 
+            });
+        }
+        
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('svg');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+        
+        // Smooth scroll para links de navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Formatação automática do CNPJ
+        document.getElementById('cnpj').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            value = value.replace(/^(\d{2})(\d)/, '$1.$2');
+            value = value.replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3');
+            value = value.replace(/\.(\d{3})(\d)/, '.$1/$2');
+            value = value.replace(/(\d{4})(\d)/, '$1-$2');
+            e.target.value = value;
+        });
+        
+        // Formatação automática do telefone
+        document.getElementById('telefone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            value = value.replace(/^(\d{2})(\d)/, '($1) $2');
+            value = value.replace(/(\d{5})(\d)/, '$1-$2');
+            e.target.value = value;
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99194097733e9ca8',t:'MTc2MDk3MTAzNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

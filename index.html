@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vòlia - Seja um Revendedor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans">
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="logo.png" alt="Logo Vòlia" class="logo-img">
+            </div>
+            <nav class="nav">
+                <a href="#vantagens" class="nav-link">Vantagens</a>
+                <a href="#cadastro" class="nav-link">Cadastro</a>
+                <a href="#faq" class="nav-link">Dúvidas</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner-principal">
+        <div class="container banner-content fade-in">
+            <div class="banner-text-overlay">
+                <h1 class="banner-title">
+                    Seja um Revendedor <span class="banner-subtitle">Vòlia</span>
+                </h1>
+                <p class="banner-text">
+                    Transforme sua loja com os melhores cosméticos para unhas do mercado. 
+                    Junte-se à nossa rede de parceiros e descubra as vantagens exclusivas da Vòlia.
+                </p>
+            </div>
+            <div class="banner-actions">
+                <a href="#cadastro" class="btn btn-primary hover-scale">
+                    Quero ser Revendedor
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="vantagens" class="section section-vantagens">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Vantagens Exclusivas</h2>
+                <p class="section-subtitle">Vantagens exclusivas para nossos parceiros revendedores e um textinho aqui</p>
+            </div>
+            
+            <div class="vantagens-grid">
+                <div class="vantagem-card hover-scale">
+                    <div class="vantagem-icon-wrapper">
+                        <p>🚫</p>
+                    </div>
+                    <h3 class="vantagem-title">Isenção de ST</h3>
+                    <p class="vantagem-text">Isenção de Substituição Tributária em SP e ES, aumentando sua margem de lucro.</p>
+                </div>
+
+                <div class="vantagem-card hover-scale">
+                    <div class="vantagem-icon-wrapper">
+                        <p>🚚</p>                        
+                    </div>
+                    <h3 class="vantagem-title">Hub Logístico</h3>
+                    <p class="vantagem-text">Centro de distribuição estratégico em SP para entregas rápidas em todo o Brasil para pedidos acima de R$ 4.000,00.</p>
+                </div>
+
+                <div class="vantagem-card hover-scale">
+                    <div class="vantagem-icon-wrapper">
+                        <p>🎓</p>
+                    </div>
+                    <h3 class="vantagem-title">Cursos para Lojistas</h3>
+                    <p class="vantagem-text">Capacitação completa sobre os nossos produtos e táticas de venda.</p>
+                </div>
+
+                <div class="vantagem-card hover-scale">
+                    <div class="vantagem-icon-wrapper">
+                         <p>🏷️</p>
+                    </div>
+                    <h3 class="vantagem-title">Ações Promocionais</h3>
+                    <p class="vantagem-text">Campanhas de marketing e materiais promocionais exclusivos.</p>
+                </div>
+
+                <div class="vantagem-card hover-scale">
+                    <div class="vantagem-icon-wrapper">
+                        <p>💎</p>
+                    </div>
+                    <h3 class="vantagem-title">Exclusividade</h3>
+                    <p class="vantagem-text">Vendemos exlusivamente para lojistas, não concorremos diretamente com você.</p>
+                </div>
+
+                <div class="vantagem-card hover-scale">
+                    <div class="vantagem-icon-wrapper">
+                        <p>👋</p>
+                    </div>
+                    <h3 class="vantagem-title">Suporte Dedicado</h3>
+                    <p class="vantagem-text">Equipe especializada para suas dúvidas e necessidades comerciais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cadastro" class="section section-cadastro">
+        <div class="container">
+            <div class="cadastro-wrapper">
+                <div class="section-header">
+                    <h2 class="section-title-dark">Cadastre sua Loja</h2>
+                    <p class="section-subtitle-dark">Preencha os dados abaixo e nossa equipe entrará em contato</p>
+                </div>
+
+                <form class="cadastro-form" onsubmit="handleSubmit(event)">
+                    <div class="form-grid">
+                        <div>
+                            <label for="nomeLoja" class="form-label">Nome da Loja </label>
+                            <input type="text" id="nomeLoja" name="nomeLoja" required class="form-input">
+                        </div>
+
+                        <div>
+                            <label for="cnpj" class="form-label">CNPJ </label>
+                            <input type="text" id="cnpj" name="cnpj" required placeholder="00.000.000/0000-00" class="form-input">
+                        </div>
+
+                        <div>
+                            <label for="instagram" class="form-label">Instagram</label>
+                            <input type="text" id="instagram" name="instagram" placeholder="@sualojainstagram" class="form-input">
+                        </div>
+                        <div>
+                            <label for="telefone" class="form-label">Telefone/WhatsApp *</label>
+                            <input type="tel" id="telefone" name="telefone" required placeholder="(11) 99999-9999" class="form-input">
+                        </div>
+                        <div>
+                            <label for="cidade" class="form-label">Cidade </label>
+                            <input type="text" id="cidade" name="cidade" required class="form-input">
+                        </div>
+
+                        <div>
+                            <label for="uf" class="form-label">UF </label>
+                            <select id="uf" name="uf" required class="form-input form-select">
+                                <option value="">Selecione o Estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+
+                     
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-purple hover-scale">
+                            Enviar Cadastro
+                        </button>
+                    </div>
+
+                    <div id="successMessage" class="success-message hidden">
+                        <div class="success-content">
+                            <img src="icon_vantagem_check.png" alt="Sucesso" class="success-img">
+                            Cadastro enviado com sucesso! Nossa equipe entrará em contato em breve.
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="section section-quem-somos">
+        <div class="container">
+            <div class="quem-somos-wrapper">
+                <h2 class="section-title-dark text-center">Quem Somos Nós</h2>
+                <div class="quem-somos-card">
+                    <div class="quem-somos-text-area">
+                        <p class="quem-somos-text">
+                            A <strong class="text-purple-highlight">Vòlia</strong> é uma marca brasileira especializada em cosméticos para unhas, 
+                            comprometida em oferecer produtos de alta qualidade e inovação para profissionais e lojistas em todo o país.
+                        </p>
+                        <p class="quem-somos-text">
+                            Com anos de experiência no mercado de beleza, desenvolvemos uma linha completa de esmaltes, 
+                            bases, tops e acessórios que atendem às mais exigentes demandas do setor.
+                        </p>
+                        <p class="quem-somos-text">
+                            Nossa missão é empoderar nossos parceiros revendedores com produtos excepcionais, 
+                            suporte dedicado e condições comerciais diferenciadas para o crescimento mútuo.
+                        </p>
+                    </div>
+                    <div class="quem-somos-highlight-area">
+                        <div class="highlight-content">
+                            <img src="qualidade.jpeg" alt="Qualidade" class="highlight-img-large"> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section section-faq">
+        <div class="container">
+            <div class="faq-wrapper">
+                <div class="section-header">
+                    <h2 class="section-title-dark">Perguntas Frequentes</h2>
+                    <p class="section-subtitle-dark">Tire suas principais dúvidas sobre nossa parceria</p>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-button" onclick="toggleFaq(this)">
+                            Qual o pedido mínimo para ser revendedor?
+                            <div class="faq-icon-arrow">
+                                <span class="arrow-shape"></span> 
+                            </div>
+                        </button>
+                        <div class="faq-content hidden">
+                            <p class="faq-text">R$ 3.000,00</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-button" onclick="toggleFaq(this)">
+                            Como funciona a entrega dos produtos?
+                            <div class="faq-icon-arrow">
+                                <span class="arrow-shape"></span> 
+                            </div>
+                        </button>
+                        <div class="faq-content hidden">
+                            <p class="faq-text">É feito na modalidade FOB (frete por conta do cliente).</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-button" onclick="toggleFaq(this)">
+                            Quais são as formas de pagamento?
+                            <div class="faq-icon-arrow">
+                                <span class="arrow-shape"></span> 
+                            </div>
+                        </button>
+                        <div class="faq-content hidden">
+                            <p class="faq-text">à vista (PIX ou débito) ou no cartão de crédito até 6x sem juros (parcela mínima de R$500,00).</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-button" onclick="toggleFaq(this)">
+                            Vocês oferecem treinamento para vendedores?
+                            <div class="faq-icon-arrow">
+                                <span class="arrow-shape"></span> 
+                            </div>
+                        </button>
+                        <div class="faq-content hidden">
+                            <p class="faq-text">Sim! Oferecemos capacitação completa sobre os nossos produtos e táticas de venda online.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-button" onclick="toggleFaq(this)">
+                            Como funciona o suporte pós-venda?
+                            <div class="faq-icon-arrow">
+                                <span class="arrow-shape"></span> 
+                            </div>
+                        </button>
+                        <div class="faq-content hidden">
+                            <p class="faq-text">Temos uma equipe dedicada para atender nossos parceiros via WhatsApp, telefone e email. Oferecemos suporte técnico, comercial e de marketing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section section-contato">
+        <div class="container contato-content">
+            <div class="contato-wrapper">
+                <div class="contato-header">
+                    </div>
+                    <h2 class="contato-title">Entre em contato📲</h2>
+                    <p class="contato-text-subtitle">
+                        Nossa equipe está pronta para esclarecer todas as suas questões e ajudar você a se tornar um parceiro Vòlia
+                    </p>
+                </div>
+                
+                <div class="contato-grid">
+                    <div class="contato-cta hover-scale">
+                        <div class="whatsapp-icon-wrapper">
+                            <img src="icon_whatsapp.png" alt="Ícone do WhatsApp" class="whatsapp-img">
+                        </div>
+                        <h3 class="cta-title">Fale Conosco Agora!</h3>
+                        <p class="cta-text">
+                            Converse diretamente com nossa equipe comercial. 
+                            <br><strong>Online:</strong> Segunda a Sexta, 8h às 17h
+                        </p>
+                        <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse em ser revendedor Vòlia. Gostaria de mais informações." 
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn btn-whatsapp hover-scale">
+                            <img src="icon_whatsapp.png" alt="WhatsApp" class="whatsapp-btn-img">
+                            Conversar no WhatsApp
+                        </a>
+                    </div>
+                    
+                    <div class="contato-info-list">
+                        
+                        
+                        <div class="contato-info-card">
+                            <div class="info-card-header">
+                                <div class="info-card-icon-wrapper">
+                                    <span class="info-card-emoji">🎯</span>
+                                </div>
+                                <h4 class="info-card-title">Atendimento Personalizado</h4>
+                            </div>
+                            <p class="info-card-text">Consultoria especializada para seu tipo de negócio</p>
+                        </div>
+                        
+                        <div class="contato-info-card">
+                            <div class="info-card-header">
+                                <div class="info-card-icon-wrapper">
+                                    <span class="info-card-emoji">💜</span>
+                                </div>
+                                <h4 class="info-card-title">Suporte Completo</h4>
+                            </div>
+                            <p class="info-card-text">Desde o cadastro até o pós-venda, estamos com você</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Logo Vòlia" class="logo-img">
+                </div>
+                <p class="footer-text">
+                    Cosméticos para unhas de alta qualidade para profissionais exigentes.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="footer-title">Contato</h3>
+                <div class="footer-contact-list">
+                    <p>📧 sac@voliacosmeticos.com.br</p>
+                    <p>📞 (27) 99242-8383</p>
+                    <p>📍 Vila Velha - ES</p>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="footer-title">Dúvidas?</h3>
+                <p class="footer-text">
+                    Caso tenha alguma dúvida, pode entrar em contato diretamente com nossa equipe:
+                </p>
+                <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer"
+                   class="btn btn-whatsapp-footer">
+                    <img src="icon_whatsapp.png" alt="WhatsApp" class="whatsapp-btn-img">
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Vòlia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
